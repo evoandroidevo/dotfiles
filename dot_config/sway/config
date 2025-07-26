@@ -1,0 +1,11 @@
+# set background
+output * bg /home/kohrai/.config/backgrounds/95weemniixs61.png fill
+#exec ~/.config/sway/scripts/screen_share_fix.sh
+
+
+# include custom sway config
+include "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf"
+
+# include default sway config
+include /etc/sway/config.d/*.conf
+#include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf")
